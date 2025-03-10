@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Articles</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #F5F5DC; /* 柔和米色 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            color: #2F4F4F;
+        }
+
+        /* 文章目录（一级标题）：三列布局 */
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* 目录卡片 */
+        .article {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .article img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .article h2 {
+            padding: 15px;
+            background: #4682B4;
+            color: white;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .articles {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 主页（一级目录） -->
+    <div class="container">
+        <h1>Urban Farming in Paris</h1>
+        <div class="articles">
+            <div class="article" onclick="window.location.href='ielts-19.html'">
+                <img src="IELTS_19.jpg" alt="IELTS-19">
+                <h2>IELTS-19</h2>
+            </div>
+            <div class="article" onclick="window.location.href='ielts-18.html'">
+                <img src="IELTS_18.jpg" alt="IELTS-18">
+                <h2>IELTS-18</h2>
+            </div>
+            <div class="article" onclick="window.location.href='ielts-17.html'">
+                <img src="IELTS_17.jpg" alt="IELTS-17">
+                <h2>IELTS-17</h2>
+            </div>
+            <div class="article" onclick="window.location.href='ielts-16.html'">
+                <img src="IELTS_16.jpg" alt="IELTS-16">
+                <h2>IELTS-16</h2>
+            </div>
+            <div class="article" onclick="window.location.href='ielts-15.html'">
+                <img src="IELTS_15.jpg" alt="IELTS-15">
+                <h2>IELTS-15</h2>
+            </div>
+            <div class="article" onclick="window.location.href='ielts-14.html'">
+                <img src="IELTS_14.jpg" alt="IELTS-14">
+                <h2>IELTS-14</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

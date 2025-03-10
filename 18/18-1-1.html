@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Farming</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;  /* Beautiful serif font for readability */
+            line-height: 1.8;  /* Increased line height for better readability */
+            color: #333;
+            background: #F5F5F5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        h2 {
+            font-family: 'Arial', sans-serif;
+            color: #2F4F4F;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: justify;
+            max-width: 1000px;  /* Adjusted the width of the text */
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            color: #444;
+            margin-bottom: 15px;
+            text-indent: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .highlighted-text {
+            background-color: lightblue;
+            padding: 2px 4px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* Buttons in the top section */
+        .top-btns {
+            display: flex;
+            justify-content: flex-end;  /* Align buttons to the right */
+            margin-bottom: 20px;
+        }
+        .top-btns button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .top-btns button:hover {
+            background-color: #45a049;
+        }
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+        .sidebar h3 {
+            text-align: center;
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .word-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .word-list li {
+            padding: 8px 0;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .word-list li span {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main content area -->
+<div class="container">
+    <div class="top-btns">
+        <button onclick="changeFontSize('decrease')">A-</button>
+        <button onclick="changeFontSize('increase')">A+</button>
+        
+    </div>
+    <h2>Urban Farming</h2>
+ 
+    <div id="text-content">
+        <p>In Paris, urban farmers are trying a soil-free approach to agriculture that uses less space and fewer resources. Could it help cities face the threats to our food supplies?</p>
+        <p>On top of a striking new exhibition hall in southern Paris, the world's largest urban rooftop farm has started to bear fruit. Strawberries that are small, intensely flavoured and resplendently red sprout abundantly from large plastic tubes. Peer inside and you see the tubes are completely hollow, the roots of dozens of strawberry plants dangling down inside them. From identical vertical tubes nearby burst row upon row of lettuces; near those are aromatic herbs, such as basil, sage and peppermint. Opposite, in narrow, horizontal trays packed not with soil but with coconut fibre, grow cherry tomatoes, shiny aubergines and brightly coloured chards.</p>
+        <p>Pascal Hardy, an engineer and sustainable development consultant, began experimenting with vertical farming and aeroponic growing towers - as the soil-free plastic tubes are known - on his Paris apartment block roof five years ago. The urban rooftop space above the exhibition hall is somewhat bigger: 14,000 square metres and almost exactly the size of a couple of football pitches. Already, the team of young urban farmers who tend it have picked, in one day, 3,000 lettuces and 150 punnets of strawberries. When the remaining two thirds of the vast open area are in production, 20 staff will harvest up to 1,000 kg of perhaps 35 different varieties of fruit and vegetables, every day. 'We're not ever, obviously, going to feed the whole city this way,' cautions Hardy. 'In the urban environment you're working with very significant practical constraints, clearly, on what you can do and where. But if enough unused space can be developed like this, there's no reason why you shouldn't eventually target maybe between 5% and 10% of consumption.'</p>
+        <p>Perhaps most significantly, however, this is a real-life showcase for the work of Hardy's flourishing urban agriculture consultancy, Agripolis, which is currently fielding enquiries from around the world to design, build and equip a new breed of soil-free inner-city farm. 'The method's advantages are many,' he says. 'First, I don't much like the fact that most of the fruit and vegetables we eat have been treated with something like 17 different pesticides, or that the intensive farming techniques that produced them are such huge generators of greenhouse gases. I don't much like the fact, either, that they've travelled an average of 2,000 refrigerated kilometres to my plate, that their quality is so poor, because the varieties are selected for their capacity to withstand such substantial journeys, or that 80% of the price I pay goes to wholesalers and transport companies, not the producers.'</p>
+        <p>Produce grown using this soil-free method, on the other hand - which relies solely on a small quantity of water, enriched with organic nutrients, pumped around a closed circuit of pipes, towers and trays - is 'produced up here, and sold locally, just down there. It barely travels at all,' Hardy says. 'You can select crop varieties for their flavour, not their resistance to the transport and storage chain, and you can pick them when they're really at their best, and not before.' No soil is exhausted, and the water that gently showers the plants' roots every 12 minutes is recycled, so the method uses 90% less water than a classic intensive farm for the same yield.</p>
+        <p>Urban farming is not, of course, a new phenomenon. Inner-city agriculture is booming from Shanghai to Detroit and Tokyo to Bangkok. Strawberries are being grown in disused shipping containers, mushrooms in underground carparks. Aeroponic farming, he says, is 'virtuous'. The equipment weighs little, can be installed on almost any flat surface and is cheap to buy: roughly €100 to €150 per square metre. It is cheap to run, too, consuming a tiny fraction of the electricity used by some techniques.</p>
+        <p>Produce grown this way typically sells at prices that, while generally higher than those of classic intensive agriculture, are lower than soil-based organic growers. There are limits to what farmers can grow this way, of course, and much of the produce is suited to the summer months. 'Root vegetables we cannot do, at least not yet,' he says. 'Radishes are OK, but carrots, potatoes, that kind of thing - the roots are simply too long. Fruit trees are obviously not an option. And beans tend to take up a lot of space for not much return.' Nevertheless, urban farming of the kind being practised in Paris is one part of a bigger and fast-changing picture that is bringing food production closer to our lives.</p>
+    </div>
+
+</div>
+
+<!-- Sidebar for highlighted words -->
+<div class="sidebar">
+    <h3>Highlighted Words</h3>
+    <ul class="word-list" id="highlighted-words-list">
+        <!-- Highlighted words will appear here -->
+    </ul>
+</div>
+
+<script>
+    let highlightedText = JSON.parse(localStorage.getItem('highlightedText')) || [];
+    let wordCount = 1;  // Used for numbering the words
+
+    // Function to highlight the selected text and add it to the list
+    function highlightText(event) {
+        const selection = window.getSelection();
+        const selectedText = selection.toString();
+
+        if (selectedText && !highlightedText.includes(selectedText)) {
+            // Add the selected text to the highlighted list
+            highlightedText.push(selectedText);
+            const li = document.createElement('li');
+            li.innerHTML = `<span>${wordCount++}.</span> ${selectedText}`;
+            li.addEventListener('click', function() {
+                removeHighlightFromText(selectedText);
+            });
+            document.getElementById('highlighted-words-list').appendChild(li);
+
+            // Highlight the text in the paragraph
+            const span = document.createElement('span');
+            span.classList.add('highlighted-text');
+            span.textContent = selectedText;
+
+            // Replace the selected text with the highlighted span
+            const innerHTML = document.getElementById('text-content').innerHTML;
+            const newHTML = innerHTML.replace(selectedText, span.outerHTML);
+            document.getElementById('text-content').innerHTML = newHTML;
+
+            // Save highlighted text in localStorage
+            localStorage.setItem('highlightedText', JSON.stringify(highlightedText));
+        }
+    }
+
+    // Add event listener to handle text selection and highlight
+    document.getElementById('text-content').addEventListener('mouseup', highlightText);
+
+    // Function to remove all highlights
+    function removeHighlight() {
+        // Reset highlighted text and list
+        highlightedText = [];
+        wordCount = 1;
+        document.getElementById('highlighted-words-list').innerHTML = '';
+        document.getElementById('text-content').innerHTML = document.getElementById('text-content').innerHTML.replace(/<span class="highlighted-text">/g, '').replace(/<\/span>/g, '');
+        
+        // Remove from localStorage
+        localStorage.removeItem('highlightedText');
+    }
+
+    // Function to adjust font size
+    function changeFontSize(action) {
+        const textContent = document.getElementById('text-content');
+        const currentFontSize = parseInt(window.getComputedStyle(textContent).fontSize);
+
+        if (action === 'increase') {
+            textContent.style.fontSize = (currentFontSize + 2) + 'px';
+        } else if (action === 'decrease') {
+            textContent.style.fontSize = (currentFontSize - 2) + 'px';
+        }
+    }
+
+    // Function to remove highlight from the text and the word list when clicked
+    function removeHighlightFromText(text) {
+        // Remove from the highlightedText array
+        highlightedText = highlightedText.filter(item => item !== text);
+        document.getElementById('highlighted-words-list').innerHTML = '';
+        highlightedText.forEach((word, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `<span>${index + 1}.</span> ${word}`;
+            li.addEventListener('click', function() {
+                removeHighlightFromText(word);
+            });
+            document.getElementById('highlighted-words-list').appendChild(li);
+        });
+
+        // Remove the highlight in the text content
+        const regEx = new RegExp(`<span class="highlighted-text">${text}</span>`, 'g');
+        document.getElementById('text-content').innerHTML = document.getElementById('text-content').innerHTML.replace(regEx, text);
+
+        // Save updated highlighted text in localStorage
+        localStorage.setItem('highlightedText', JSON.stringify(highlightedText));
+    }
+
+    // Load the previously highlighted words from localStorage
+    function loadHighlightedWords() {
+        // Re-highlight the saved text
+        highlightedText.forEach((text, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `<span>${index + 1}.</span> ${text}`;
+            li.addEventListener('click', function() {
+                removeHighlightFromText(text);
+            });
+            document.getElementById('highlighted-words-list').appendChild(li);
+
+            // Re-create the highlight effect in the text content
+            const regEx = new RegExp(`(${text})`, 'g');
+            document.getElementById('text-content').innerHTML = document.getElementById('text-content').innerHTML.replace(regEx, `<span class="highlighted-text">$1</span>`);
+        });
+    }
+
+    // Call the load function when the page loads
+    loadHighlightedWords();
+</script>
+
+</body>
+</html>
