@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Articles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        h2, h3 {
+            cursor: pointer;
+            background: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border-left: 5px solid #ddd;
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 onclick="toggleContent('article1')">Title 1: Introduction to Web Development</h2>
+    <div id="article1" class="content">
+        <h3 onclick="toggleContent('sub1')">1.1 What is HTML?</h3>
+        <div id="sub1" class="content">
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages.</p>
+        </div>
+
+        <h3 onclick="toggleContent('sub2')">1.2 What is CSS?</h3>
+        <div id="sub2" class="content">
+            <p>CSS (Cascading Style Sheets) is used to style HTML elements.</p>
+        </div>
+    </div>
+
+    <h2 onclick="toggleContent('article2')">Title 2: JavaScript Basics</h2>
+    <div id="article2" class="content">
+        <h3 onclick="toggleContent('sub3')">2.1 What is JavaScript?</h3>
+        <div id="sub3" class="content">
+            <p>JavaScript is a programming language that allows you to add interactivity to web pages.</p>
+        </div>
+
+        <h3 onclick="toggleContent('sub4')">2.2 Variables and Data Types</h3>
+        <div id="sub4" class="content">
+            <p>JavaScript variables can store different data types, such as numbers, strings, and objects.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
